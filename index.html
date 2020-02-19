@@ -1,16 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Game Deck</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title>My app</title>
-</head>
+  <body>
+    <div class="social-icons">
+      <img src="/assets/img/SVG/social-bar.svg" alt="" class="socialbar" />
+      <img src="/assets/img/instagram.svg" alt="" class="icon" />
+      <img src="/assets/img/twitter.svg" alt="" class="icon" />
+      <img src="/assets/img/youtube.svg" alt="" class="icon" />
+    </div>
+    <nav class="nav"> 
+      <div class="nav__logo">
+        <img src="/assets/img/SVG/logo.svg" alt="">
+      </div>
+      <ul class="nav__links">
+        <li class="nav__links--item"><a href="#">INICIO</a></li>
+        <li class="nav__links--item"><a href="#">BENEFICIOS</a></li>
+        <li class="nav__links--item"><a href="#">REGÍSTRATE</a></li>
+      </ul>
+    </nav>
+    <section class="header">
+      <a href="#section-info" class="btn-action btn-header">CLICK</a>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="header__container slide-1">
+              <div class="header__container--info">
+                <h1 class="primary-heading">COACHING</h1>
+                <p class="sub-text">
+                  Te entregamos todas las herramientas para llevar tu juego al <span>PRÓXIMO NIVEL</span>
+                </p>
 
-<body>
-    <h1 class="heading">My app</h1>
-</body>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="header__container slide-2">
+              <div class="header__container--info">
+                <h1 class="primary-heading">HARDWARE</h1>
+                <p class="sub-text">
+                  Encuentra tu hardware favorito y alcanza nuevas experiencias de juego
+                </p>
 
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="header__container slide-3">
+              <div class="header__container--info">
+                <h1 class="primary-heading">TORNEOS</h1>
+                <p class="sub-text">
+                  Toda la información que buscas sobre torneos nacionales e internacionales
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info" id="section-info">
+      <div class="title__holder">
+        <div class="title__number"><p>I</p></div>
+        <h1 class="title__h1">GAMEY</h1>
+        <p class="title__top">GAME DECK</p>
+      </div>
+      <div class="info__left section-half">
+        <h1 class="primary-heading info-h1">DISFRUTA DEL MEJOR CONTENIDO</h1>
+        <p class="sub-text info-h1">Regístrate y podrás acceder al mejor contenido de tu plataforma de juego favorita. Novedades, lanzamientos exclusivos, códigos de descuento, campeonatos</p>          
+        </p>
+      </div>
+      <div class="info__right section-half">
+        <a href="" class="info__item">
+          <div>
+          <img src="/assets/img/SVG/ps4.svg" alt="" class="info__img">
+        </div>
+      </a> 
+      <a href="" class="info__item">
+        <div>
+          <img src="/assets/img/SVG/xboxone.svg" alt="" class="info__img"> 
+        </div>
+      </a>
+      <a href=""class="info__item">
+        <div>
+          <img src="/assets/img/SVG/switch.svg" alt="" class="info__img"> 
+        </div>
+        </a>
+        <a href="" class="info__item">
+        <div>
+          <img src="/assets/img/SVG/pc.svg" alt="" class="info__img"> 
+        </div>
+        </a>
+      </div>
+    </section>
+<section class="tour" id="#tour">
+  <div class="title2__holder">
+    <div class="title__number number-tour"><p>II</p></div>
+    <h1 class="title__h1 title-tour">MORE GAMEY</h1>
+    <p class="title__top top-tour">GAME DECK</p>
+  </div>
+  <div class="tour__left section-half"></div>
+  <div class="tour__right section-half"></div>
+
+</section>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        direction: "horizontal",
+        loop: true,
+        
+      });
+    </script>
+  </body>
 </html>
+
+<!--autoplay: {
+          delay: 5000
+        }-->

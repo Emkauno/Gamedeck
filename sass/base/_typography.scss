@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,600&display=swap");
+
+* {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.primary-heading {
+    font-weight: 400;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 0 2rem;
+  letter-spacing: .2rem;
+  transition: all .3s ease;
+  color:$color-white;
+
+  &:hover {
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -2rem;
+      background-color: lighten($color-yellow, 15%);
+      width: 0.2rem;
+      height: 6rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: -2rem;
+      background-color: lighten($color-yellow, 15%);
+      width: 0.2rem;
+      height: 6rem;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: $color-yellow;
+    width: 0.2rem;
+    height: 6rem;
+    transform: translateY(-1rem);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: $color-yellow;
+    width: 0.2rem;
+    height: 6rem;
+    transform: translateY(-1rem);
+  }
+  &.info-h1 {
+    font-size: 5rem;
+    &::before {
+      transform: translateY(-.1rem);
+    }
+    &::after {
+      transform: translateY(-.1rem);
+    }
+  }
+}
+
+.sub-text {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  color: $color-white;
+  line-height: 3rem;
+  
+  &.info-h1{
+    width: 100%;
+    max-width: 80rem;
+  }
+
+  & span {
+    font-weight: 700;
+  }
+}
